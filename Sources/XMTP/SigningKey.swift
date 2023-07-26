@@ -37,8 +37,8 @@ extension SigningKey {
 		let signatureText = Signature.createIdentityText(key: try slimKey.serializedData())
 		let signature = try await sign(message: signatureText)
 
-		let message = try Signature.ethPersonalMessage(signatureText)
-		let recoveredKey = try KeyUtilx.recoverPublicKeyKeccak256(from: signature.rawData, message: message)
+		let messageHash = try Signature.ethHash(signatureText)
+		let recoveredKey = try KeyUtilx.recoverPublicKeyKeccak256(from: signature.rawData, message: messageHash)
 		let address = KeyUtilx.generateAddress(from: recoveredKey).toChecksumAddress()
 
 		var authorized = PublicKey()
