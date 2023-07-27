@@ -3,8 +3,8 @@
 //  Copyright © 2022 Argent Labs Limited. All rights reserved.
 //
 import Foundation
-import Logging
-import GigaBitcoin-secp256k1
+//import Logging
+import GigaBitcoin_secp256k1
 import web3
 import XMTPRust
 
