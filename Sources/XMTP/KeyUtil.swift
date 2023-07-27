@@ -4,7 +4,7 @@
 //
 import Foundation
 import Logging
-import secp256k1
+import GigaBitcoin-secp256k1
 import web3
 import XMTPRust
 

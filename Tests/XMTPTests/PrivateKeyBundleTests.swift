@@ -5,7 +5,7 @@
 //  Created by Pat Nakajima on 11/29/22.
 //
 
-import secp256k1
+import GigaBitcoin-secp256k1
 import XCTest
 @testable import XMTP
 
